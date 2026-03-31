@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { useUser, UserButton } from '@clerk/nextjs'
 import Button from '@/components/ui/Button'
 
 const navLinks = [
@@ -15,14 +16,16 @@ const navLinks = [
 export default function Header() {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const { isSignedIn } = useUser()
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-warm-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 py-4">
+
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <span className="font-serif text-2xl font-light tracking-widest text-charcoal group-hover:text-honey transition-colors duration-200 italic">
+            <span className="font-serif text-2xl font-light italic tracking-widest text-charcoal group-hover:text-honey transition-colors duration-200">
               Aylani
             </span>
             <span className="hidden sm:block text-xs font-sans tracking-widest uppercase text-muted border-l border-warm-300 pl-3">
@@ -49,18 +52,43 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Link
-              href="/login"
-              className="font-sans text-sm font-medium text-warm-600 hover:text-charcoal transition-colors duration-200"
-            >
-              Inloggen
-            </Link>
-            <Button href="/aanbod" size="sm">
-              Start vandaag
-            </Button>
+            {!isSignedIn ? (
+              <>
+                <Link
+                  href="/sign-in"
+                  className="font-sans text-sm font-medium text-warm-600 hover:text-charcoal transition-colors duration-200"
+                >
+                  Inloggen
+                </Link>
+                <Button href="/sign-up" size="sm">
+                  Start vandaag
+                </Button>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/dashboard"
+                  className={`font-sans text-sm font-medium transition-colors duration-200 ${
+                    pathname === '/dashboard' ? 'text-honey' : 'text-warm-600 hover:text-charcoal'
+                  }`}
+                >
+                  Mijn omgeving
+                </Link>
+                <UserButton
+                  appearance={{
+                    elements: {
+                      avatarBox: 'w-8 h-8',
+                      userButtonPopoverCard: 'bg-cream-50 border border-warm-200 shadow-lg rounded-2xl',
+                      userButtonPopoverActionButton: 'text-warm-600 hover:text-charcoal hover:bg-warm-100 rounded-xl',
+                      userButtonPopoverActionButtonText: 'font-sans text-sm',
+                    },
+                  }}
+                />
+              </>
+            )}
           </div>
 
-          {/* Mobile menu toggle */}
+          {/* Mobile toggle */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden p-2 rounded-lg text-warm-600 hover:text-charcoal hover:bg-warm-100 transition-colors duration-200"
@@ -97,19 +125,28 @@ export default function Header() {
             ))}
           </nav>
           <div className="flex flex-col gap-3">
-            <Link
-              href="/login"
-              onClick={() => setMenuOpen(false)}
-              className="font-sans text-sm text-warm-600 text-center py-2"
-            >
-              Inloggen
-            </Link>
-            <Button href="/intake" variant="outline" size="sm" className="w-full justify-center">
-              Doe de intake
-            </Button>
-            <Button href="/aanbod" size="sm" className="w-full justify-center">
-              Start vandaag
-            </Button>
+            {!isSignedIn ? (
+              <>
+                <Link
+                  href="/sign-in"
+                  onClick={() => setMenuOpen(false)}
+                  className="font-sans text-sm text-warm-600 text-center py-2"
+                >
+                  Inloggen
+                </Link>
+                <Button href="/sign-up" size="sm" className="w-full justify-center">
+                  Start vandaag
+                </Button>
+              </>
+            ) : (
+              <Link
+                href="/dashboard"
+                onClick={() => setMenuOpen(false)}
+                className="font-sans text-sm text-center text-warm-600 py-2"
+              >
+                Mijn omgeving
+              </Link>
+            )}
           </div>
         </div>
       )}

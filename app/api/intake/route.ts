@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { auth } from '@clerk/nextjs/server'
+import { createServerClient } from '@/lib/supabase'
 
 function buildSystemPrompt(lang: 'nl' | 'en'): string {
   if (lang === 'nl') {
@@ -103,6 +105,30 @@ export async function POST(request: NextRequest) {
     }
 
     const content = data.content?.[0]?.text || ''
+
+    // Sla intake-resultaat op in Supabase als het JSON bevat
+    const match = content.match(/<r>([\s\S]*?)<\/r>/)
+    if (match) {
+      try {
+        const result = JSON.parse(match[1].trim())
+        const { userId } = await auth()
+        const supabase = createServerClient()
+        await supabase.from('intake_results').insert({
+          clerk_id: userId ?? null,
+          lang,
+          profiel_naam: result.profiel_naam,
+          profiel_tagline: result.profiel_tagline,
+          profiel_beschrijving: result.profiel_beschrijving,
+          patronen: result.patronen,
+          routines: result.routines,
+          voeding: result.voeding,
+          eerste_stap: result.eerste_stap,
+        })
+      } catch {
+        // Stille fout — intake-resultaat niet opgeslagen, maar conversatie gaat door
+      }
+    }
+
     return NextResponse.json({ content })
   } catch {
     return NextResponse.json(

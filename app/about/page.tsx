@@ -31,7 +31,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ─── HERO MET BOS ─────────────────────────────────────────── */}
-      <section className="relative h-[90vh] flex items-end overflow-hidden">
+      <section className="relative min-h-screen flex items-end overflow-hidden">
         <Image
           src="/images/bos.jpeg"
           alt="Persoon staat stil bij een houten hek in een gouden, zonnig bos"
@@ -99,6 +99,80 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── TEAM ─────────────────────────────────────────────────── */}
+      <section className="py-24 lg:py-32 bg-cream-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="mb-14">
+            <p className="label-text mb-4">Het team</p>
+            <h2 className="font-serif text-3xl lg:text-4xl font-light text-charcoal text-balance max-w-xl">
+              De mensen achter <span className="italic text-honey">Aylani</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            {/* Gert */}
+            <div className="bg-cream rounded-3xl overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/images/gert_doris_vaderkind.jpg"
+                  alt="Gert Kornet"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="font-serif text-2xl font-light text-charcoal mb-1">Gert Kornet</h3>
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {['Ondernemer', 'IT', 'Ervaringsdeskundige'].map((tag) => (
+                    <span key={tag} className="text-xs font-sans tracking-wider uppercase text-honey border border-honey/30 px-3 py-1 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-warm-500 leading-relaxed">
+                  Als ondernemer en IT-professional weet Gert wat het is om veel ballen
+                  in de lucht te houden. Zijn eigen zoektocht naar meer energie en balans
+                  bracht hem bij de inzichten die Aylani draagt. Hij bouwde het platform
+                  zodat de tools die hij had gevonden, bereikbaar worden voor anderen.
+                </p>
+              </div>
+            </div>
+
+            {/* Nikki */}
+            <div className="bg-cream rounded-3xl overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/images/nikki_klimmen.JPG"
+                  alt="Nikki"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="font-serif text-2xl font-light text-charcoal mb-1">Nikki</h3>
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {['Gedragswetenschapper', 'Ayurveda specialist', 'Voedingsdeskundige'].map((tag) => (
+                    <span key={tag} className="text-xs font-sans tracking-wider uppercase text-honey border border-honey/30 px-3 py-1 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-warm-500 leading-relaxed">
+                  Nikki verbindt gedragswetenschap, Ayurveda en voedingsleer tot een
+                  aanpak die écht werkt. Haar expertise vormt de ruggengraat van de
+                  Aylani-methode — vertaald naar praktische begeleiding die bij jouw
+                  ritme en constitutie past.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

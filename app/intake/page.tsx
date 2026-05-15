@@ -200,7 +200,7 @@ export default function IntakePage() {
 
   // ──────────────────────────────────────────────────────────────────────────
   return (
-    <div className="min-h-screen bg-cream flex flex-col pt-[72px]">
+    <div className="h-[100dvh] bg-cream flex flex-col pt-[72px] overflow-hidden">
 
       {/* ─── Minimal intake header ───────────────────────────────────── */}
       <div className="border-b border-warm-200 bg-cream/95 backdrop-blur-sm">
@@ -300,10 +300,10 @@ export default function IntakePage() {
 
       {/* ─── CHAT ────────────────────────────────────────────────────── */}
       {(phase === 'chat' || phase === 'result') && (
-        <div className="flex-1 flex flex-col max-w-2xl mx-auto w-full px-6">
+        <div className="flex-1 flex flex-col max-w-2xl mx-auto w-full px-6 min-h-0">
 
           {/* Messages */}
-          <div className="flex-1 py-8 space-y-5">
+          <div className="flex-1 overflow-y-auto py-8 space-y-5 min-h-0">
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -370,7 +370,7 @@ export default function IntakePage() {
 
           {/* Input */}
           {phase === 'chat' && (
-            <div className="sticky bottom-0 pb-8 pt-4 bg-gradient-to-t from-cream via-cream/95 to-transparent">
+            <div className="flex-shrink-0 pb-8 pt-4 bg-gradient-to-t from-cream via-cream/95 to-transparent">
               <div className="flex gap-3 items-end bg-white border border-warm-200 rounded-full px-5 py-3 shadow-sm focus-within:border-honey transition-colors duration-200">
                 <textarea
                   ref={textareaRef}

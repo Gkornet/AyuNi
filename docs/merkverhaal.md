@@ -139,10 +139,16 @@ wordt pas waardevol als je het klein en toepasbaar maakt. Nuchter (Gert) + diepg
 
 ## 12. Hoe we het brengen (commercieel — kort)
 
-De motor is een **betaald contentabonnement**: een groeiende bibliotheek van artikelen,
-programma's, oefeningen en tips die je één keer maakt en herhaald verkoopt (evergreen,
-schaalt zonder jouw tijd). **Echte begeleiding** is een beperkte, hoogwaardige premium-
-upsell — niet het hoofdinkomen, wél de bron van inzichten die je terugstopt in de content
-(de flywheel). Gratis kennisbank + intake vormen de funnel.
+De motor is een **betaald contentabonnement (membership)**: een groeiende bibliotheek van
+artikelen, programma's, oefeningen en tips die je één keer maakt en herhaald verkoopt
+(evergreen, schaalt zonder jouw tijd). Gratis kennisbank + intake + de gereedschapskist
+(incl. externe app/podcast-tips) vormen de funnel.
 
-> Detailuitwerking (prijzen, tiers, contentkalender) volgt in een apart voorstel.
+Concrete keuzes (eerste versie):
+- **Membership**: € 12 / maand, of € 120 / jaar (twee maanden gratis). Maandelijks opzegbaar.
+- **Beperkt gratis**: een selectie artikelen, de intake en de gereedschapskist gratis; de
+  volledige bibliotheek en programma's achter het membership.
+- **1-op-1 begeleiding**: voorlopig weggelaten. Komt later als beperkte premium-upsell —
+  die levert dan ook de inzichten die je terugstopt in de content (de flywheel).
+
+> Detailuitwerking (contentkalender, programma's) volgt apart.

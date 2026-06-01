@@ -110,17 +110,17 @@ export default async function DashboardPage() {
           </div>
         )}
 
-        {/* Upgrade nudge */}
+        {/* Membership nudge */}
         <div className="bg-honey-50 border border-honey-100 rounded-3xl p-7 flex flex-col sm:flex-row items-start sm:items-center gap-6">
           <div className="flex-1">
-            <p className="label-text mb-1">Upgrade je begeleiding</p>
-            <p className="font-serif text-xl font-light text-charcoal">Wil je meer persoonlijke aandacht?</p>
+            <p className="label-text mb-1">Aylani Membership</p>
+            <p className="font-serif text-xl font-light text-charcoal">Wil je de volledige bibliotheek?</p>
             <p className="text-warm-500 text-sm mt-1 leading-relaxed">
-              Schakel over naar begeleiding met persoonlijke check-ins en een plan op maat.
+              Word lid en krijg toegang tot alle artikelen, programma&#39;s en elke maand nieuwe content.
             </p>
           </div>
           <Button href="/aanbod" variant="outline" size="sm" className="flex-shrink-0">
-            Bekijk opties
+            Bekijk het membership
           </Button>
         </div>
 

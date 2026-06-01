@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: '%s — Aylani',
   },
   description:
-    'Persoonlijke leefstijlbegeleiding voor drukke ouders en professionals. Voor mensen die veel dragen en ook weer goed voor zichzelf willen leren zorgen.',
+    'Persoonlijke leefstijlbegeleiding voor wie vol in het leven staat en er meer uit wil halen. Voeding, beweging, slaap en rust — klein gemaakt en gewoon te doen.',
   keywords: [
     'leefstijlbegeleiding',
     'coaching',
@@ -34,11 +34,13 @@ export const metadata: Metadata = {
     'ritme',
     'welzijn',
     'gezondheid',
+    'ouders',
+    'professionals',
   ],
   openGraph: {
     title: 'Aylani — Rust. Energie. Ritme.',
     description:
-      'Persoonlijke leefstijlbegeleiding voor drukke ouders en professionals.',
+      'Persoonlijke leefstijlbegeleiding voor wie vol in het leven staat en er meer uit wil halen.',
     locale: 'nl_NL',
     type: 'website',
   },

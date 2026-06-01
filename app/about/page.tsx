@@ -188,6 +188,61 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ─── PERSOONLIJK — WAAROM IK AYLANI BEGON ─────────────────── */}
+      <section className="py-24 lg:py-32 bg-cream">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <p className="label-text mb-5">Persoonlijk</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-light text-charcoal mb-10 text-balance">
+            Waarom ik <span className="italic text-honey">Aylani begon</span>
+          </h2>
+          <div className="space-y-6 text-warm-500 text-lg leading-relaxed">
+            <p>
+              De afgelopen jaren kwam er veel op me af. Grote dingen — het soort dat je even
+              stilzet en je dwingt opnieuw te kijken naar wat echt telt. Ik dacht altijd dat
+              ik het wel aankon: meer uren, harder werken, gewoon dóór. Tot ik merkte dat
+              &ldquo;doorgaan&rdquo; niet hetzelfde is als overeind blijven.
+            </p>
+            <p>
+              Wat me hielp, was geen goeroe en geen wonderprogramma. Het was nuchter uitzoeken
+              wat wérkte. Een coach die me overzicht en afstand gaf. Een partner die de scherpe
+              vraag bleef stellen: welk probleem los je nu echt op, en wat wil je bereiken? Een
+              osteopaat en mijn huisarts om mijn lijf te begrijpen. En — heel eerlijk — een
+              Garmin en een Excel waarin ik bijhield wat slaap, drinken en beweging met me deden.
+              Ik benaderde mezelf zoals ik een systeem benader: meten, begrijpen, kleine dingen
+              bijstellen.
+            </p>
+            <p>
+              Toen viel het kwartje. Het is eigenlijk heel simpel. Het kost weinig tijd en geeft
+              snel resultaat — zolang je het klein houdt, dichtbij jezelf, en het bij je past.
+              Geen shock-kuren. Wel dagelijkse dingen die discipline kosten, maar blijven hangen
+              omdat ze kloppen. En juist als er veel op je afkomt, is dat fundament — rust,
+              energie, goed voor jezelf zorgen — wat je overeind houdt en je er laat zijn voor
+              de mensen om je heen.
+            </p>
+            <p>
+              Aylani is wat ik zelf had willen hebben: geen stortvloed aan tips, maar een
+              nuchtere plek die het klein en behapbaar maakt. Ik ben geen goeroe. Ik ben iemand
+              die het zelf heeft moeten uitvinden — en die het systeem dat werkte nu deelt.
+            </p>
+          </div>
+          <div className="flex items-center gap-4 mt-10">
+            <div className="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0">
+              <Image
+                src="/images/gert_doris_vaderkind.jpg"
+                alt="Gert Kornet"
+                fill
+                className="object-cover object-center"
+                sizes="56px"
+              />
+            </div>
+            <div>
+              <p className="font-serif text-xl text-charcoal italic">Gert</p>
+              <p className="text-warm-400 text-sm">Oprichter van Aylani</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ─── VISIE MET LANDSCHAPSFOTO ─────────────────────────────── */}
       <section className="relative py-36 overflow-hidden">
         <Image

@@ -37,17 +37,23 @@ versnelt alles. Wat ontbreekt is niet nóg een tip, hack of programma — maar i
 
 ## 5. Het inzicht
 
-Het werkt pas als je het **klein maakt.** Stap voor stap, begrijpelijk, gecontroleerd.
-En: je leert door te **doen** — door te beginnen, te vallen en te ontdekken wat bij je
-past. We denken er allemaal te veel over na.
+Het werkt pas als je het **klein en simpel maakt** en **dichtbij jezelf houdt.** Stap voor
+stap, begrijpelijk, gecontroleerd. En: je leert door te **doen** — door te beginnen, te
+vallen en te ontdekken wat bij je past. We denken er allemaal te veel over na.
+
+Geen shock-effecten of kortstondige ingrepen. Wél aanpassingen in je dagelijkse patronen
+en ritmes. Dat **kost discipline** — daar zijn we eerlijk over. Maar juist omdat het
+dichtbij je hart ligt en bij je past, wordt het echt uitvoerbaar en haalbaar. Niet
+moeiteloos, wel haalbaar.
 
 ## 6. De methode
 
 1. **Begrijpen** — eerst weten hoe jij in elkaar zit. Geen aannames, wel inzicht. (→ de intake)
 2. **Klein maken** — geen grootse schema's. Eén concrete stap tegelijk.
 3. **Meten** — bijhouden wat slaap, beweging en voeding met je doen. Meten is begrijpen.
-4. **Volhouden wat past** — geen crashcursus of shockdieet. Wat werkt en voldoening geeft,
-   bouwen we uit. De rest laten we vallen.
+4. **Volhouden wat past** — geen crashcursus of shockdieet. Dagelijkse patronen en ritmes
+   die dichtbij je hart liggen, kosten discipline maar blijven hangen. Wat werkt en
+   voldoening geeft, bouwen we uit. De rest laten we vallen.
 
 ## 7. De gereedschapskist — twee lagen
 
@@ -69,6 +75,13 @@ voorschrift. Zo blijft het nuchter én ruim.
 
 ## 8. De mensen achter Aylani
 
+> **Belangrijk uitgangspunt: de levenservaring is het fundament, niet de boodschap.**
+> Tegenslagen, verlies en het faillissement van vorig jaar hebben de kennis, ervaring en
+> overtuiging gevormd waar Aylani op rust. Maar we vertellen die verhalen **niet letterlijk**
+> op het platform. We gebruiken wat ze ons geleerd hebben — gedestilleerd tot de aanpak:
+> klein, simpel, dichtbij jezelf, gericht op blijvende dagelijkse ritmes. Wat de bezoeker
+> ziet is die aanpak, niet het persoonlijke verhaal erachter.
+
 **Gert — de doener / bouwer.**
 Ondernemer in een zittend IT-vak die tegen zijn eigen grenzen aanliep. Geen goeroe loste
 dat op — wél een nuchtere aanpak die hij zelf opbouwde: een coach voor overzicht en
@@ -76,22 +89,18 @@ reflectie, een scherpe vraag van zijn partner (welk probleem los je op, wat wil 
 bereiken?), een osteopaat en huisarts om zijn lijf te begrijpen, een Garmin en een simpele
 Excel om te meten wat slaap, drinken en beweging écht deden, en een trainer omdat bewegen
 in een zittend vak cruciaal is. Zijn conclusie: het is eigenlijk heel simpel, kost weinig
-tijd en geeft snel resultaat — zolang het bij je past.
+tijd en geeft snel resultaat — zolang het klein blijft, dichtbij jezelf staat en bij je
+past. Wat hij zelf merkt: zó werkt het, en zó houdt hij het vol.
 
-*Lessen uit het faillissement (vorig jaar):* **[TE BEVESTIGEN]** — de échte lessen in
-Gerts eigen woorden. Richting: wat overeind blijven onder maximale druk je leert over
-energie, rust en prioriteiten; dat je gezondheid en fundament juist tellen als alles
-wankelt; dat klein en concreet beginnen het enige is dat werkt als het zwaar is. Dit is
-sterke, eerlijke geloofwaardigheid — geen schaamte, wel een les.
+Het faillissement van vorig jaar zit niet als verhaal op de site, maar wél in de overtuiging:
+juist als alles onder druk staat, telt het fundament — rust, energie, en kleine dingen die
+je dichtbij jezelf houdt.
 
 **Nikki — de diepgang / verbinding.**
 Verbindt gedragswetenschap, Ayurveda en voedingsleer tot een aanpak die écht werkt. Warm
 en verbindend. Vertaalt diepgang naar voeding en gewoontes die je merkt in je energie en
-je hoofd.
-
-*Levenservaring:* **[TE BEVESTIGEN]** — Nikki heeft een levenservaring die diep gaat en
-weet wat veerkracht vraagt. Of en hoe dit (incl. het verlies van een kindje) expliciet
-benoemd wordt op het platform, is haar keuze. Standaard houden we het nu impliciet.
+je hoofd. Haar levenservaring is het fundament onder die diepgang — niet iets dat we op het
+platform uitspellen.
 
 **Waar Gert en Nikki elkaar raken:** energie en oplossingsgerichtheid. Het kán — en het
 wordt pas waardevol als je het klein en toepasbaar maakt. Nuchter (Gert) + diepgang
@@ -104,6 +113,8 @@ wordt pas waardevol als je het klein en toepasbaar maakt. Nuchter (Gert) + diepg
 - "Het is eigenlijk heel simpel. Weinig tijd, snel resultaat — als het maar bij je past."
 - "We reiken het aan, jij houdt wat past."
 - "Geen poespas. Gewoon doen."
+- "Geen shock-effecten. Wel dagelijkse ritmes die blijven."
+- "Klein, simpel en dichtbij jezelf — daardoor haalbaar."
 - "Rust. Energie. Ritme." (bestaande pay-off)
 
 ## 10. Toon & stijl
@@ -113,6 +124,10 @@ wordt pas waardevol als je het klein en toepasbaar maakt. Nuchter (Gert) + diepg
 - **Eerlijk** — geen miracle cures, geen holle beloftes, geen schuldgevoel als je een dag mist.
 - **Niet zweverig** — krachtige tools nuchter gebracht: "kijk wat het jóu doet."
 - **Aanbod, geen voorschrift** — ruimte voor de holistische laag zonder dogma.
+- **Vanuit overtuiging, niet prekend** — "dit werkt voor mij zo" als basis, geen belerend
+  vingertje. Eerlijk over dat het discipline kost.
+- **Ervaring als fundament, niet als verhaal** — de diepe persoonlijke lessen voeden de
+  aanpak, maar worden niet uitgespeld.
 - Aanspreekvorm: je/jij.
 
 ## 11. Wat we NIET zijn

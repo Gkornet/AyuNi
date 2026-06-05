@@ -18,6 +18,9 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const { isSignedIn } = useUser()
 
+  // De intake is een standalone full-screen flow met een eigen header.
+  if (pathname?.startsWith('/intake')) return null
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-warm-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">

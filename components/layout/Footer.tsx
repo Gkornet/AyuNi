@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const platformLinks = [
   { href: '/', label: 'Home' },
@@ -15,6 +18,11 @@ const supportLinks = [
 ]
 
 export default function Footer() {
+  const pathname = usePathname()
+
+  // De intake is een standalone full-screen flow zonder site-footer.
+  if (pathname?.startsWith('/intake')) return null
+
   return (
     <footer className="bg-warm-800 text-warm-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">

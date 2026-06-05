@@ -34,11 +34,11 @@ const pillars = [
 ]
 
 const forWhoPains = [
-  'Je agenda is vol — en je wil ook meer ruimte voor jezelf',
-  'Je slaapt, maar wil je echt uitgerust voelen',
-  'Je zorgt goed voor anderen — en bent klaar om ook voor jezelf te kiezen',
-  'Je weet wat er anders kan — je zoekt een aanpak die ook echt werkt',
-  'Je hoofd werkt hard — ook als de dag er al op zit',
+  'Altijd online, altijd bereikbaar — je hoofd staat de hele dag aan',
+  'Je agenda is vol, en slaap, beweging en rust schuiven naar de achtergrond',
+  'Genoeg hacks en aanbod voorbij zien komen — je zoekt iets dat écht past',
+  'Je weet wat zou helpen, maar in dit tempo komt het er niet van',
+  'Je wil geen groots schema, maar gewoon ergens beginnen',
 ]
 
 const forWhoWants = [
@@ -52,26 +52,26 @@ const forWhoWants = [
 const offerPreview = [
   {
     label: 'Gratis',
-    title: 'Inspiratie & kennisbank',
-    desc: 'Praktische artikelen, korte oefeningen en eerlijke inzichten. Geen spam, geen hype — gewoon bruikbare kennis.',
-    cta: 'Ontdek de kennisbank',
+    title: 'Kennisbank & tips',
+    desc: 'Een selectie gratis artikelen, korte oefeningen en onze gereedschapskist met app- en podcasttips. Geen spam, geen hype.',
+    cta: 'Verken gratis',
     href: '/aanbod',
     featured: false,
   },
   {
-    label: 'Begeleiding',
-    title: 'Persoonlijk traject',
-    desc: 'Wekelijkse check-ins, een persoonlijk plan en concrete actiestappen. Samen bouwen we aan rust, energie en ritme in jouw leven.',
-    cta: 'Bekijk begeleiding',
+    label: 'Membership',
+    title: 'Alles van Aylani',
+    desc: 'De volledige bibliotheek, alle programma\'s en elke maand nieuwe content. Eén vast bedrag, maandelijks opzegbaar.',
+    cta: 'Bekijk het membership',
     href: '/aanbod',
     featured: true,
   },
   {
-    label: 'Premium',
-    title: 'Intensief & persoonlijk',
-    desc: 'Voor wie dieper wil gaan. Intensieve 1-op-1 begeleiding met volledige aandacht voor jouw situatie, tempo en doelen.',
-    cta: 'Meer over premium',
-    href: '/aanbod',
+    label: 'Gratis',
+    title: 'De intake',
+    desc: 'Leer jezelf in 5 minuten scherper kennen. Een persoonlijk profiel met een eerste stap die je vandaag al kunt zetten.',
+    cta: 'Start de intake',
+    href: '/intake',
     featured: false,
   },
 ]
@@ -106,8 +106,9 @@ export default function HomePage() {
               Ritme.
             </h1>
             <p className="font-sans text-lg lg:text-xl text-white/75 leading-relaxed max-w-lg mb-12">
-              Persoonlijke leefstijlbegeleiding voor drukke ouders en professionals.
-              Voor mensen die veel dragen — en ook weer goed voor zichzelf willen leren zorgen.
+              Persoonlijke leefstijlbegeleiding voor wie vol in het leven staat.
+              Voor iedereen met genoeg om handen die er meer uit wil halen — met
+              voeding, beweging, slaap en rust als fundament.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="/aanbod" size="lg">
@@ -146,19 +147,21 @@ export default function HomePage() {
 
             {/* Tekst */}
             <div className="order-1 lg:order-2">
-              <p className="label-text mb-5">Klinkt dit herkenbaar?</p>
+              <p className="label-text mb-5">De tijd waarin we leven</p>
               <h2 className="font-serif text-4xl lg:text-5xl font-light text-charcoal leading-tight mb-8 text-balance">
-                Je draagt veel.<br />
-                <span className="italic text-honey">Je doet het goed.</span>
+                Eindeloze mogelijkheden.<br />
+                <span className="italic text-honey">En alles gaat door.</span>
               </h2>
               <p className="text-warm-500 text-lg leading-relaxed mb-5">
-                Je werkt hard, zorgt voor anderen en houdt alles draaiende. Juist
-                daarom is dit het moment om te investeren in jezelf. Niet met grote
-                ingrepen of rigide schema&#39;s — maar met een aanpak die past bij hoe jij bent.
+                Online, connected, snel en vluchtig — en AI zet er nog een tempo bovenop.
+                In een volle agenda zakken slaap, beweging en rust in je hoofd ongemerkt
+                naar de achtergrond. Terwijl dat juist is wat je staande houdt.
               </p>
               <p className="text-warm-500 text-lg leading-relaxed mb-10">
-                Aylani helpt je concreet: meer energie, beter slaapritme en
-                dagelijkse gewoontes die je ook volhoudt.
+                We denken er allemaal te veel over na. Je leert pas door te doen — door te
+                beginnen, te vallen en te ontdekken wat bij je past. Aylani maakt het klein
+                en concreet, zodat goed voor jezelf zorgen geen project wordt, maar gewoon
+                te doen is.
               </p>
               <ul className="space-y-3">
                 {forWhoPains.map((pain, i) => (
@@ -249,14 +252,15 @@ export default function HomePage() {
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
                 <p className="font-serif text-2xl lg:text-3xl font-light italic leading-snug text-cream-100">
-                  Voor mensen die veel dragen en ook weer goed voor zichzelf willen leren zorgen.
+                  Het is eigenlijk heel simpel. Weinig tijd, snel resultaat — als het maar bij je past.
                 </p>
               </div>
               <div className="border-t border-warm-700 pt-8">
                 <p className="text-warm-300 text-sm leading-relaxed mb-8">
-                  Aylani is er voor drukke ouders en professionals die het beste willen geven
-                  — aan hun werk, hun gezin, hun omgeving. En die tegelijk voelen dat ze ook
-                  zelf iets nodig hebben.
+                  Aylani is er voor mensen die vol in het leven staan en het beste willen geven
+                  — aan hun werk, de mensen om hen heen, én aan zichzelf. Geen vage beloftes of
+                  grote schema&#39;s. Gewoon kleine, oplossingsgerichte stappen die werken en
+                  voldoening geven.
                 </p>
                 <Button href="/aanbod" variant="outline">
                   Bekijk wat past bij jou

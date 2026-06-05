@@ -5,98 +5,68 @@ import Button from '@/components/ui/Button'
 export const metadata: Metadata = {
   title: 'Aanbod',
   description:
-    'Van gratis kennis tot intensieve begeleiding. Ontdek wat bij jou past.',
+    'Begin gratis of word lid van Aylani. Eén membership met de volledige bibliotheek — klein, praktisch en bij je passend.',
 }
 
 const freeItems = [
-  'Praktische artikelen over slaap, energie en dagritme',
-  'Korte oefeningen voor meer rust in je dag',
-  'Tips die je direct kunt toepassen',
+  'Een selectie gratis artikelen over slaap, energie en ritme',
+  'De persoonlijke intake — in 5 minuten je profiel',
+  'Onze gereedschapskist met app- en podcasttips',
   'Inzichten over leefstijl zonder de hype',
 ]
 
-const tiers = [
+const membershipFeatures = [
+  'De volledige kennisbank — slaap, energie, ritme en voeding',
+  "Stap-voor-stap programma's, klein en behapbaar gemaakt",
+  'Korte oefeningen: meditatie, ademhaling en stilte',
+  'De gereedschapskist: yoga, Ayurveda en nummerologie als zelfinzicht',
+  'Elke maand nieuwe content',
+  'Je voortgang bijhouden in je persoonlijke dashboard',
+  'Maandelijks opzegbaar',
+]
+
+const toolboxApps = [
   {
-    id: 'instap',
-    badge: 'Instap',
-    name: 'Zelfstandig starten',
-    price: '€ 47',
-    period: 'per maand',
-    tagline: 'Voor wie zelf aan de slag wil met duidelijke begeleiding.',
-    description:
-      'Een gestructureerde start met een persoonlijk plan, wekelijkse focuspunten en toegang tot de volledige kennisbank. Je werkt op je eigen tempo, met de tools van Aylani als kompas.',
-    features: [
-      'Persoonlijk startplan gebaseerd op jouw situatie',
-      'Toegang tot de volledige kennisbank',
-      'Wekelijkse focuspunten en micro-oefeningen',
-      'Maandelijkse check-in via het platform',
-      'Voortgang bijhouden in je persoonlijke dashboard',
-    ],
-    cta: 'Begin met instap',
-    featured: false,
-    note: null,
+    name: 'Insight Timer',
+    desc: 'Duizenden gratis meditaties, ademhalingsoefeningen en geluiden voor rust en focus.',
   },
   {
-    id: 'begeleiding',
-    badge: 'Begeleiding',
-    name: 'Persoonlijk traject',
-    price: '€ 147',
-    period: 'per maand',
-    tagline: 'Voor wie écht resultaat wil en begeleiding op maat zoekt.',
-    description:
-      'Intensievere ondersteuning met regelmatige 1-op-1 contactmomenten, een plan dat meebeweegt met jouw leven en directe feedback. Je staat er niet alleen voor.',
-    features: [
-      'Alles van het instapplan',
-      '2x per maand 1-op-1 videocall (45 min)',
-      'Persoonlijk actieplan met wekelijkse aanpassingen',
-      'Directe berichtenmogelijkheid via het platform',
-      'Prioritaire reactietijd',
-      'Kwartaalreview met voortgangsrapport',
-    ],
-    cta: 'Start begeleiding',
-    featured: true,
-    note: 'Meest gekozen',
+    name: 'Meditation Moments',
+    desc: 'Nederlandse meditaties en slaapsessies om je hoofd tot rust te brengen.',
+  },
+]
+
+const toolboxPodcasts = [
+  {
+    name: 'Rust in je hoofd',
+    desc: 'Podcast over mentale rust en omgaan met een vol hoofd.',
   },
   {
-    id: 'premium',
-    badge: 'Premium',
-    name: 'Intensief traject',
-    price: 'Op aanvraag',
-    period: null,
-    tagline: 'Voor wie dieper wil gaan en maximale aandacht wil.',
-    description:
-      'Volledige 1-op-1 begeleiding met wekelijkse sessies, realtime ondersteuning en een plan dat volledig om jou gebouwd is. Voor mensen in transitie of met complexere vragen.',
-    features: [
-      'Alles van het begeleidingsplan',
-      'Wekelijkse 1-op-1 videocall (60 min)',
-      'Onbeperkte berichtenmogelijkheid',
-      'Dagelijkse check-in mogelijkheid',
-      'Prioritaire aandacht en snelle respons',
-      'Persoonlijke intake en afsluiting',
-      'Toegang tot exclusieve materialen',
-    ],
-    cta: 'Plan een gesprek',
-    featured: false,
-    note: 'Beperkte plekken',
+    name: 'Alles op Tafel',
+    desc: 'Podcast met open gesprekken over leven, keuzes en wat er echt toe doet.',
   },
 ]
 
 const faqs = [
   {
-    q: 'Is Aylani geschikt voor mensen zonder leefstijlervaring?',
-    a: "Ja. Aylani is juist bedoeld voor mensen die willen beginnen of opnieuw willen beginnen. Je hoeft geen ervaring te hebben met coaching of welzijnsprogramma's.",
+    q: 'Wat krijg ik met het membership?',
+    a: "Toegang tot de volledige kennisbank, alle programma's, korte oefeningen en de gereedschapskist — plus elke maand nieuwe content. Je houdt je voortgang bij in je eigen dashboard.",
+  },
+  {
+    q: 'Kan ik maandelijks opzeggen?',
+    a: 'Ja. Het membership is maandelijks opzegbaar. Kies je voor het jaarabonnement, dan krijg je twee maanden korting.',
+  },
+  {
+    q: 'Is er ook persoonlijke begeleiding?',
+    a: "Op dit moment ligt de focus op het membership: praktische content en programma's die je zelfstandig volgt. Persoonlijke 1-op-1 begeleiding voegen we later toe.",
   },
   {
     q: 'Wat is het verschil tussen leefstijlbegeleiding en therapie?',
     a: 'Leefstijlbegeleiding richt zich op praktische gewoontes en dagelijkse patronen. Therapie gaat dieper in op psychologische processen. Aylani is geen therapie en geen vervanging voor medische zorg.',
   },
   {
-    q: 'Kan ik stoppen wanneer ik wil?',
-    a: 'Ja. Maandelijkse abonnementen zijn maandelijks opzegbaar. Voor trajecten gelden specifieke afspraken die vooraf worden besproken.',
-  },
-  {
     q: 'Hoe snel merk ik verschil?',
-    a: 'Dat verschilt per persoon. Veel mensen merken al na een paar weken verschil in focus en energie. Duurzame verandering kost tijd — en dat is juist het uitgangspunt van Aylani.',
+    a: 'Dat verschilt per persoon. Veel mensen merken al na een paar weken verschil in focus en energie. Klein, simpel en dichtbij jezelf is juist het uitgangspunt — daardoor houd je het vol.',
   },
 ]
 
@@ -126,8 +96,8 @@ export default function AanbodPage() {
               <span className="italic text-honey">jij staat</span>
             </h1>
             <p className="text-warm-500 text-lg leading-relaxed">
-              Van gratis kennis tot intensieve persoonlijke begeleiding.
-              Er is een plek voor je, wat je situatie ook is.
+              Begin gratis, of word lid voor de volledige bibliotheek.
+              Klein, praktisch en bij je passend — geen dure trajecten.
             </p>
           </div>
         </div>
@@ -140,11 +110,12 @@ export default function AanbodPage() {
             <div>
               <p className="label-text mb-4">Gratis beginnen</p>
               <h2 className="font-serif text-3xl lg:text-4xl font-light text-charcoal mb-5 text-balance">
-                Kennisbank & inspiratie
+                Verken het eerst gratis
               </h2>
               <p className="text-warm-500 leading-relaxed mb-8">
-                Wil je eerst verkennen wat Aylani voor je kan betekenen? Begin met de
-                gratis kennisbank. Praktisch, direct toepasbaar en zonder bullshit.
+                Wil je eerst kijken wat Aylani voor je kan betekenen? Begin met een
+                selectie gratis artikelen, de intake en onze gereedschapskist.
+                Praktisch, direct toepasbaar en zonder bullshit.
               </p>
               <ul className="space-y-3 mb-8">
                 {freeItems.map((item, i) => (
@@ -182,8 +153,53 @@ export default function AanbodPage() {
         </div>
       </section>
 
-      {/* ─── INTAKE ───────────────────────────────────────────────── */}
+      {/* ─── GEREEDSCHAPSKIST ─────────────────────────────────────── */}
       <section className="py-24 bg-cream-200">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="max-w-xl mb-14">
+            <p className="label-text mb-4">De gereedschapskist</p>
+            <h2 className="font-serif text-3xl lg:text-4xl font-light text-charcoal mb-5 text-balance">
+              We reiken het aan,{' '}
+              <span className="italic text-honey">jij houdt wat past</span>
+            </h2>
+            <p className="text-warm-500 leading-relaxed">
+              Meditatie, stilte en rust zijn in deze tijd waardevoller dan ooit. We delen
+              graag de tools die ons zelf helpen — gratis, ook als ze niet van Aylani komen.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Apps */}
+            <div className="bg-cream-50 border border-warm-200 rounded-3xl p-8">
+              <p className="text-xs font-sans tracking-widest uppercase text-honey mb-6">Apps</p>
+              <ul className="space-y-6">
+                {toolboxApps.map((item) => (
+                  <li key={item.name} className="border-b border-warm-200 pb-6 last:border-0 last:pb-0">
+                    <p className="font-serif text-xl font-medium text-charcoal mb-1">{item.name}</p>
+                    <p className="text-warm-500 text-sm leading-relaxed">{item.desc}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Podcasts */}
+            <div className="bg-cream-50 border border-warm-200 rounded-3xl p-8">
+              <p className="text-xs font-sans tracking-widest uppercase text-honey mb-6">Podcasts</p>
+              <ul className="space-y-6">
+                {toolboxPodcasts.map((item) => (
+                  <li key={item.name} className="border-b border-warm-200 pb-6 last:border-0 last:pb-0">
+                    <p className="font-serif text-xl font-medium text-charcoal mb-1">{item.name}</p>
+                    <p className="text-warm-500 text-sm leading-relaxed">{item.desc}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── INTAKE ───────────────────────────────────────────────── */}
+      <section className="py-24 bg-cream">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -288,88 +304,69 @@ export default function AanbodPage() {
         </div>
       </section>
 
-      {/* ─── BETAALDE TIERS ───────────────────────────────────────── */}
+      {/* ─── MEMBERSHIP ───────────────────────────────────────────── */}
       <section className="py-24 bg-cream-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center max-w-xl mx-auto mb-16">
-            <p className="label-text mb-4">Begeleiding</p>
+          <div className="text-center max-w-xl mx-auto mb-14">
+            <p className="label-text mb-4">Het membership</p>
             <h2 className="font-serif text-3xl lg:text-5xl font-light text-charcoal text-balance">
-              Kies wat bij jou past
+              Alles van Aylani,{' '}
+              <span className="italic text-honey">één vast bedrag</span>
             </h2>
             <p className="text-warm-500 mt-4 leading-relaxed">
-              Alle plannen zijn maandelijks opzegbaar. Geen verborgen kosten.
+              Geen losse pakketten of dure trajecten. Eén membership met de volledige
+              bibliotheek — klein gemaakt en gewoon te doen.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {tiers.map((tier) => (
-              <div
-                key={tier.id}
-                className={`rounded-3xl p-8 flex flex-col relative ${
-                  tier.featured
-                    ? 'bg-charcoal text-cream-50 ring-2 ring-honey'
-                    : 'bg-cream-50 border border-warm-200'
-                }`}
-              >
-                {tier.note && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="bg-honey text-white text-xs font-medium font-sans tracking-wider px-4 py-1 rounded-full whitespace-nowrap">
-                      {tier.note}
-                    </span>
-                  </div>
-                )}
-
-                <div className="mb-6">
-                  <p className="text-xs font-sans tracking-widest uppercase mb-2 text-honey">
-                    {tier.badge}
-                  </p>
-                  <h3 className={`font-serif text-2xl font-medium mb-3 ${tier.featured ? 'text-cream-50' : 'text-charcoal'}`}>
-                    {tier.name}
-                  </h3>
-                  <p className={`text-sm leading-relaxed ${tier.featured ? 'text-warm-300' : 'text-warm-500'}`}>
-                    {tier.tagline}
-                  </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-5 rounded-3xl overflow-hidden ring-2 ring-honey">
+              {/* Prijs / CTA */}
+              <div className="lg:col-span-2 bg-charcoal text-cream-50 p-8 lg:p-10 flex flex-col">
+                <p className="text-xs font-sans tracking-widest uppercase text-honey mb-6">
+                  Aylani Membership
+                </p>
+                <div className="mb-2">
+                  <span className="font-serif text-5xl font-light text-cream-50">€ 12</span>
+                  <span className="text-warm-400 text-sm ml-2">per maand</span>
                 </div>
+                <p className="text-warm-300 text-sm mb-8">
+                  of € 120 per jaar — twee maanden gratis
+                </p>
+                <p className="text-warm-300 text-sm leading-relaxed mb-8 flex-1">
+                  Maandelijks opzegbaar. Geen verborgen kosten. Begin wanneer je wilt,
+                  stop wanneer je wilt.
+                </p>
+                <Button href="/login" variant="primary">
+                  Word lid
+                </Button>
+              </div>
 
-                <div className="mb-6">
-                  <span className={`font-serif text-4xl font-light ${tier.featured ? 'text-cream-50' : 'text-charcoal'}`}>
-                    {tier.price}
-                  </span>
-                  {tier.period && (
-                    <span className={`text-sm ml-2 ${tier.featured ? 'text-warm-400' : 'text-muted'}`}>
-                      {tier.period}
-                    </span>
-                  )}
-                </div>
-
-                <div className={`border-t mb-6 ${tier.featured ? 'border-warm-700' : 'border-warm-200'}`} />
-
-                <ul className="space-y-3 flex-1 mb-8">
-                  {tier.features.map((feature, i) => (
+              {/* Wat zit erin */}
+              <div className="lg:col-span-3 bg-cream-50 p-8 lg:p-10">
+                <p className="text-xs font-sans tracking-widest uppercase text-honey mb-6">
+                  Wat zit erin
+                </p>
+                <ul className="space-y-4">
+                  {membershipFeatures.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className={`mt-0.5 flex-shrink-0 ${tier.featured ? 'text-honey' : 'text-sage'}`}>
+                      <span className="mt-0.5 text-sage flex-shrink-0">
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
                       </span>
-                      <span className={`text-sm leading-relaxed ${tier.featured ? 'text-warm-300' : 'text-warm-500'}`}>
-                        {feature}
-                      </span>
+                      <span className="text-warm-600 text-sm leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
-
-                <Button href="/login" variant={tier.featured ? 'primary' : 'ghost'}>
-                  {tier.cta}
-                </Button>
               </div>
-            ))}
-          </div>
+            </div>
 
-          <p className="text-center text-warm-400 text-xs mt-8 max-w-lg mx-auto">
-            Aylani is leefstijlbegeleiding en geen vervanging voor medische zorg of behandeling.
-            Bij gezondheidsvragen raden we altijd aan eerst een arts te raadplegen.
-          </p>
+            <p className="text-center text-warm-400 text-xs mt-8 max-w-lg mx-auto">
+              Aylani is leefstijlbegeleiding en geen vervanging voor medische zorg of behandeling.
+              Bij gezondheidsvragen raden we altijd aan eerst een arts te raadplegen.
+            </p>
+          </div>
         </div>
       </section>
 

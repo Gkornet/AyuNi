@@ -69,15 +69,15 @@ export default function AboutPage() {
               </p>
               <div className="w-12 h-px bg-honey" />
               <p className="text-warm-500 text-lg leading-relaxed">
-                Niet omdat ze het niet willen. Maar omdat het leven druk is. We leven in
-                een tijd van eindeloze informatie. Er is geen tekort aan tips, hacks en
-                programma&#39;s. Maar drukke ouders en professionals hebben geen behoefte aan
-                meer content. Ze hebben behoefte aan iemand die hen écht begrijpt — en
-                concreet helpt.
+                Niet omdat ze het niet willen. Maar omdat het leven vol is en alles doorgaat.
+                Coaches zijn er in overvloed, iedereen doet aan zelfheling en het aanbod loopt
+                over — en AI laat het allemaal alleen maar sneller gaan. Wat ontbreekt is niet
+                nóg een tip of programma, maar iemand die je écht begrijpt en concreet helpt.
               </p>
               <p className="text-warm-500 text-lg leading-relaxed">
-                Aylani is gebouwd op dat principe. Geen generieke adviezen. Geen zweverige
-                wellness-taal. Geen schuldgevoel als je een dag mist. Wel: eerlijke
+                Aylani is gebouwd op één les uit eigen ervaring: het werkt pas als je het klein
+                maakt. Stap voor stap, begrijpelijk, gecontroleerd. Geen generieke adviezen, geen
+                zweverige wellness-taal, geen schuldgevoel als je een dag mist. Wel: eerlijke
                 begeleiding, praktische tools en een ritme dat bij jou past.
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
                   De merkbelofte
                 </p>
                 <p className="font-serif text-xl lg:text-2xl font-light italic leading-snug">
-                  &ldquo;Voor mensen die veel dragen en ook weer goed voor zichzelf willen leren zorgen.&rdquo;
+                  &ldquo;Voor wie vol in het leven staat — en er met kleine, concrete stappen meer uit wil halen.&rdquo;
                 </p>
                 <div className="border-t border-warm-700 mt-7 pt-7">
                   <p className="text-warm-300 text-sm leading-relaxed">
@@ -136,10 +136,16 @@ export default function AboutPage() {
                   ))}
                 </div>
                 <p className="text-warm-500 leading-relaxed">
-                  Als ondernemer en IT-professional weet Gert wat het is om veel ballen
-                  in de lucht te houden. Zijn eigen zoektocht naar meer energie en balans
-                  bracht hem bij de inzichten die Aylani draagt. Hij bouwde het platform
-                  zodat de tools die hij had gevonden, bereikbaar worden voor anderen.
+                  Als ondernemer in een zittend IT-vak liep Gert tegen zijn eigen grenzen aan.
+                  Geen goeroe loste dat op — wél een nuchtere aanpak die hij stap voor stap zelf
+                  opbouwde: een coach voor overzicht en reflectie, een scherpe vraag van zijn
+                  partner (welk probleem los je op, wat wil je bereiken?), en simpele tools om te
+                  meten wat slaap, drinken en beweging écht met hem deden.
+                </p>
+                <p className="text-warm-500 leading-relaxed mt-4">
+                  Wat hem opviel: het is eigenlijk heel simpel, kost weinig tijd en geeft snel
+                  resultaat — zolang het bij je past. Hij is een doener, en bouwde Aylani zodat
+                  je die aanpak niet zelf bij elkaar hoeft te puzzelen.
                 </p>
               </div>
             </div>
@@ -165,14 +171,74 @@ export default function AboutPage() {
                   ))}
                 </div>
                 <p className="text-warm-500 leading-relaxed">
-                  Nikki verbindt gedragswetenschap, Ayurveda en voedingsleer tot een
-                  aanpak die écht werkt. Haar expertise vormt de ruggengraat van de
-                  Aylani-methode — vertaald naar praktische begeleiding die bij jouw
-                  ritme en constitutie past.
+                  Nikki verbindt gedragswetenschap, Ayurveda en voedingsleer tot een aanpak die
+                  écht werkt. Warm en verbindend, met een levenservaring die diep gaat — ze weet
+                  wat veerkracht vraagt. Die diepgang vertaalt ze naar voeding en gewoontes die je
+                  merkt in je energie en je hoofd.
+                </p>
+                <p className="text-warm-500 leading-relaxed mt-4">
+                  Waar Gert en Nikki elkaar raken: energie en oplossingsgerichtheid. Het kán — en
+                  het wordt pas waardevol als je het klein en toepasbaar maakt. Geen poespas,
+                  gewoon doen.
                 </p>
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PERSOONLIJK — WAAROM IK AYLANI BEGON ─────────────────── */}
+      <section className="py-24 lg:py-32 bg-cream">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <p className="label-text mb-5">Persoonlijk</p>
+          <h2 className="font-serif text-3xl lg:text-4xl font-light text-charcoal mb-10 text-balance">
+            Waarom ik <span className="italic text-honey">Aylani begon</span>
+          </h2>
+          <div className="space-y-6 text-warm-500 text-lg leading-relaxed">
+            <p>
+              De afgelopen jaren kwam er veel op me af. Grote dingen — het soort dat je even
+              stilzet en je dwingt opnieuw te kijken naar wat echt telt. Ik dacht altijd dat
+              ik het wel aankon: meer uren, harder werken, gewoon dóór. Tot ik merkte dat
+              &ldquo;doorgaan&rdquo; niet hetzelfde is als overeind blijven.
+            </p>
+            <p>
+              Wat me hielp, was geen goeroe en geen wonderprogramma. Het was nuchter uitzoeken
+              wat wérkte. Een coach die me overzicht en afstand gaf. Een partner die de scherpe
+              vraag bleef stellen: welk probleem los je nu echt op, en wat wil je bereiken? Een
+              osteopaat en mijn huisarts om mijn lijf te begrijpen. En — heel eerlijk — een
+              Garmin en een Excel waarin ik bijhield wat slaap, drinken en beweging met me deden.
+              Ik benaderde mezelf zoals ik een systeem benader: meten, begrijpen, kleine dingen
+              bijstellen.
+            </p>
+            <p>
+              Toen viel het kwartje. Het is eigenlijk heel simpel. Het kost weinig tijd en geeft
+              snel resultaat — zolang je het klein houdt, dichtbij jezelf, en het bij je past.
+              Geen shock-kuren. Wel dagelijkse dingen die discipline kosten, maar blijven hangen
+              omdat ze kloppen. En juist als er veel op je afkomt, is dat fundament — rust,
+              energie, goed voor jezelf zorgen — wat je overeind houdt en je er laat zijn voor
+              de mensen om je heen.
+            </p>
+            <p>
+              Aylani is wat ik zelf had willen hebben: geen stortvloed aan tips, maar een
+              nuchtere plek die het klein en behapbaar maakt. Ik ben geen goeroe. Ik ben iemand
+              die het zelf heeft moeten uitvinden — en die het systeem dat werkte nu deelt.
+            </p>
+          </div>
+          <div className="flex items-center gap-4 mt-10">
+            <div className="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0">
+              <Image
+                src="/images/gert_doris_vaderkind.jpg"
+                alt="Gert Kornet"
+                fill
+                className="object-cover object-center"
+                sizes="56px"
+              />
+            </div>
+            <div>
+              <p className="font-serif text-xl text-charcoal italic">Gert</p>
+              <p className="text-warm-400 text-sm">Oprichter van Aylani</p>
+            </div>
           </div>
         </div>
       </section>

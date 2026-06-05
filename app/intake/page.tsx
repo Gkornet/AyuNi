@@ -200,7 +200,7 @@ export default function IntakePage() {
 
   // ──────────────────────────────────────────────────────────────────────────
   return (
-    <div className="h-[100dvh] bg-cream flex flex-col pt-[72px] overflow-hidden">
+    <div className="h-[100dvh] bg-cream flex flex-col overflow-hidden">
 
       {/* ─── Minimal intake header ───────────────────────────────────── */}
       <div className="border-b border-warm-200 bg-cream/95 backdrop-blur-sm">

@@ -37,6 +37,16 @@ export const metadata: Metadata = {
     'ouders',
     'professionals',
   ],
+  // Pre-launch: site niet laten indexeren door zoekmachines
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   openGraph: {
     title: 'Aylani — Rust. Energie. Ritme.',
     description:
